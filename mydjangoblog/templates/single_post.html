@@ -1,0 +1,7 @@
+{% extends "base.html" %}
+<title>{% block head_title %}{{ block.super }} | {{ object.title }} {% endblock head_title %}</title>
+{% block content %}
+    <h1>{{ object.title }}</h1>
+    <h4>{{ object.date }}</h4>
+    <p> {{ object.content|safe|linebreaks }}</p>
+{% endblock content %}

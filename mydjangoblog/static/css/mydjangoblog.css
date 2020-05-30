@@ -1,0 +1,28 @@
+h1{
+    color:blue;
+}
+h2{
+    color:red
+}
+
+html, body {
+    padding-top: 40px;
+    height: 100%;
+}
+img{
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+.content{
+    min-height: 95%;
+    padding-bottom: 40px;
+}
+
+
+footer{
+    padding: 50px;
+    background-color: #02096d;
+    text-align: center;
+}

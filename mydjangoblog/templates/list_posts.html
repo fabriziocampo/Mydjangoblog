@@ -1,0 +1,24 @@
+{% extends "base.html" %}
+
+ {% block content %}
+    {%for object in object_list %}
+    <a href="/{{ object.id }}/{{ object.slug }}/"><h1>{{ object.title }}</h1></a>
+    <h3>{{ object.date }}</h3>
+    <p>{{ object.content|safe|linebreaks|truncatewords_html:50 }}</p>
+    {% endfor %}
+<div>
+
+    <nav aria-label="Page navigation example">
+        <ul class="pagination justify-content-center">
+            <ul class="pagination">
+                {% if page_obj.has_previous %}
+                <li class="page-item"><a class="page-link" href="?page={{ page_obj.previous_page_number }}">Previous</a></li>
+                {% endif %}
+                {% if page_obj.has_next %}
+                <li><a class="page-item"><a class="page-link" href="?page={{ page_obj.next_page_number }} ">Next page</a></li>
+                {% endif %}
+            </ul>
+        </ul>
+    </nav>
+</div>
+{% endblock content %}
