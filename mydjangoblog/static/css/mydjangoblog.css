@@ -1,12 +1,12 @@
 h1{
-    color:blue;
+    color:black;
 }
 h2{
     color:red
 }
 
 html, body {
-    padding-top: 40px;
+    padding-top: 0px;
     height: 100%;
 }
 img{
@@ -21,8 +21,34 @@ img{
 }
 
 
-footer{
+/* footer{
     padding: 50px;
-    background-color: #02096d;
+    background-color: #141011; /*#02096d
+    text-align: center;
+}*/
+
+
+ /*CSS RESUME*/
+footer{
+    background-color: #141011;
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+footer p{
+    font-family: calibri;
+}
+footer p:nth-child(1){
+    font-size: 30px;
+    color: #191919;
+    line-height: 10px;
+}
+footer p:nth-child(2){
+    font-size: 16px;
+    color: #7e7d7d;
+    width: 600px;
     text-align: center;
 }

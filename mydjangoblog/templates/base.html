@@ -1,4 +1,5 @@
-<!DOCTYPE html>
+
+ <!DOCTYPE html>
 <html lang="en">
 {% load static %}
 <head>
@@ -6,16 +7,13 @@
     <title>{% block head_title %}My Django Blog{% endblock head_title %}</title>
 
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
-
-
-    <link rel="stylesheet" href="{% static 'css/mydjangoblog.css' %}" />
-
+    <link rel="stylesheet" href="{% static 'css/mydjangoblog.css' %}" /> 
 </head>
+
 <body>
 <nav class="navbar navbar-expand-lg navbar-light bg-light navbar-fixed-top">
     <div class="container">
   <a class="navbar-brand" href="/">My Django Blog</a>
-
 
         <div class="hidden-xs">
             <div class="navbar-header pull-right">
@@ -28,19 +26,26 @@
   </button>
 
 
-
   <div class="collapse navbar-collapse" id="navbarSupportedContent">
     <ul class="navbar-nav mr-auto ">
       <li class="nav-item">
-        <a class="nav-link" href="/">Home <span class="sr-only">(current)</span></a>
+        <a class="nav-link" href="/homepage">Home<span class="sr-only">(current)</span></a>
+      </li>
+
+      <!--add button-->
+      <li class="nav-item">
+        <a class="nav-link" href="/resume">Portfolio</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="/contact">Contact</a>
+        <a class="nav-link" href="/contactme">Contact</a>
       </li>
+      
+
     </ul>
   </div>
     </div>
 </nav>
+
 
     <div class="container content">
         <div class="row">
@@ -60,15 +65,18 @@
             </div> <!--row-->
     </div>
 
+
     <div class="container-fluid">
         <footer>
-        <p style="color:black;   font-weight: bold">Social Network:</p>
+        <p style="color:white;   font-weight: bold">Social Network:</p>
         <a style="color:white" href="https://www.instagram.com/fabriziocampo_/?hl=en"><span class="glyphicon glyphicon-thumbs-up"></span>Instagram</a><br>
         <a style="color:white" href="https://www.facebook.com/Fabriziocampo98/"><span class="glyphicon glyphicon-thumbs-up"></span>Facebook</a>
         <br>
-        <a style="color:black" href="#">Top</a><br>
+        <p></p>
+        <a style="color:white" href="#">Top</a><br>
         </footer>
     </div>
+
 
 <script
   src="https://code.jquery.com/jquery-3.5.1.min.js"

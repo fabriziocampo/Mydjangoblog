@@ -1,0 +1,161 @@
+
+<!DOCTYPE html>
+<html lang="en">
+{% load static %}
+
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE-edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Portfolio</title>
+<link rel="stylesheet" href="{% static 'css/portfoliostyle.css' %}" />
+
+	<!--Using Font awesome-->
+	<script src="https://kit.fontawesome.com/c8e4d183c2.js" 
+	crossorigin="anonymous"></script>
+</head>
+<body>
+		<section>
+		<!--navigation----------->
+
+		<nav>
+			<!--logo-->
+			<a href="/resume" class="logo">Portfolio</a>
+			<!--menu-->
+			<ul>
+				<li><a class="nav-link" href="/homepage">Home <span class="sr-only">(current)</span></a></li>
+				<li><a href="/">Blog</a></li>
+				<li><a href="/contactme">Contact</a></li>
+				<!-- <li><a href="#">EMPTY</a></li> -->
+			</ul>
+			<!--bars-->
+			<div class="toggle"></div>
+		</nav>
+
+
+	<!--text------->
+		<div class="text-container">
+		<p>Hello,</p>
+		<p>I AM FABRIZIO</p>
+		<p>I'm a student of Artificial Intelligence <br>& Computer Science<br> at University of Birmingham</p>
+		<a href="/contactme"><button class="hire-btn">Contact Me</button></a>
+		<button class="down-cv">Download CV</button>
+		</div>
+	<!--model 10:13-------> 
+	<!-- photo home cv-----
+			 <img src="img/model.png" class="model" alt="model"> 
+				-->
+ 			<img alt="model" src="{% static 'img/Me.png' %}" class="model" />
+			
+	</section>
+	<!--about section------->
+	<div class="about-container">
+	<!--img-->
+		<img alt="" src="{% static 'img/logo.png' %}" width="400" height="110" />	
+
+
+	<!--img-->
+		<div class="about-text">
+			<p>About Me</p>
+			<p>Computer Scientist and AI expert</p>
+			<p>Hello my name is Fabrizio Campo and I am 22 years old, I am from Italy and I am currently based in Birmingham to pursuit my degree.</p>
+			<p>I am a determined and highly motivated student with an interest in Artificial Intelligence, Software Engineering and Data Science.</p>
+			<p>Have a look at my website and find out more about me.</p>
+		<!--button-->
+		<a href="/contactme"><button>Contact Me</button></a>
+		<button>Download CV</button>
+		</div>
+
+	</div>
+	<!--services-->
+	<div class="services">
+		<!--text-->
+	<div class="services-text">
+	<p>Here is a list of sections, click on read more and find information about me. </p>
+	<p></p>
+	<p></p>	
+	</div>
+		<!--box-->
+		<div class="box-container">
+			<!--1-->
+			<!--1
+			<img alt="" src="{% static 'img/services-1.png' %}" />
+			-->
+			<!--2-->
+			<div class="box-1">
+				<span>1</span>
+				<p class="heading"> Projects </p>
+				<p class="details">Have a look at my projects and contact me for any questions!</p>
+				
+				<a href="/projects"><button>Read more</button></a>
+				
+			</div>
+			
+			<!--3-----21:08-->
+			<div class="box-2">
+				<span>2</span>
+				<p class="heading"> Education </p>
+				<p class="details">Have a look at my education and find out more about me!</p>
+				<a href="/education"><button>Read more</button></a>
+			</div>
+
+			<div class="box-3">
+				<span>3</span>
+				<p class="heading"> Skills </p>
+				<p class="details">Have a look at the list of my Soft and Hard skills</p>
+				<a href="/skills"><button>Read more</button></a>
+			</div>
+			
+		</div>
+	</div>
+	<!--contact me---------------------------->
+	<div class="contact-me">
+	<p>If you have any project in your mind.</p>		
+	<a href="/contactme"><button>Contact Me</button></a>
+	</div>
+	<!--footer-->
+
+	<footer>
+		<p>Created by Fabrizio Campo</p>
+		<p>Check the links below and follow me on Social Media</p>
+
+			<div class="social-icons">
+				<a href="https://www.facebook.com/Fabriziocampo98/"><i class="fab fa-facebook-f"></i></a>
+				<a href="https://www.instagram.com/fabriziocampo_/?hl=en"><i class="fab fa-instagram"></i></a>
+				<a href="https://www.linkedin.com/in/fabrizio-campo/"><i class="fab fa-linkedin"></i></a>
+				<a href="https://github.com/fabriziocampo"><i class="fab fa-github"></i></a>
+			</div>
+
+			<!--copyright-->
+			<p class="copyright">Copyright by Fabrizio Campo</p>
+	</footer>
+
+	<!--attached social bar-->
+	<div class="a-social-b">
+		<a href="https://www.facebook.com/Fabriziocampo98/"><i class="fab fa-facebook-f"></i></a>
+		<a href="https://www.instagram.com/fabriziocampo_/?hl=en"><i class="fab fa-instagram"></i></a>
+		<a href="https://www.linkedin.com/in/fabrizio-campo/"><i class="fab fa-linkedin"></i></a>
+		<a href="https://github.com/fabriziocampo"><i class="fab fa-github"></i></a>
+	</div>
+
+	<!--JQuery-->
+	<script type="text/javascript" src="/static/js/JQuery.js"></script>
+	<script type="text/javascript">
+		$(document).ready(function(){
+			$('.toggle').click(function(){
+				$('.toggle').toggleClass('active')
+				$('nav').toggleClass('active')
+			})
+		})
+	</script>
+	<script
+  src="https://code.jquery.com/jquery-3.5.1.min.js"
+  integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0="
+  crossorigin="anonymous"></script>
+
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+</body>
+</html>
